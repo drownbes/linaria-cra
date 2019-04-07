@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import { styled } from 'linaria/react';
 
-const AppHeader = styled.header`
+export const AppHeader = styled.header`
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
@@ -14,11 +14,11 @@ const AppHeader = styled.header`
   color: white;
 `;
 
-const AppLink = styled.a`
+export const AppLink = styled.a`
   color: #61dafb;
 `;
 
-const AppLogo = styled.img`
+export const AppLogo = styled.img`
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
