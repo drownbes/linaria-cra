@@ -12,5 +12,13 @@ module.exports = {
       webpackConfig.module.rules[2].oneOf[1] = transformBabelLoader(loader);
       return webpackConfig;
     }
+  },
+  jest: {
+    configure: jestConfig => {
+      jestConfig.transform['^.+\\.(js|jsx|ts|tsx)$'] = require.resolve(
+        './babelTransform.js',
+      )
+      return jestConfig
+    }
   }
 }
